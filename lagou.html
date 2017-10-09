@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html,body{
+            height: 100%;
+        }
+        body{
+            position: relative;
+            padding-bottom: 45px;
+            box-sizing: border-box;
+            overflow: auto;
+        }
+        header{
+            width: 100%;
+            height: 45px;
+            line-height: 45px;
+            color: #fff;
+            font-size: 19px;
+            text-align: center;
+            background: #00b38a;
+        }
+        .sec1{
+            width: 100%;
+            height: 44px;
+            line-height: 44px;
+            padding: 0 15px;
+            display: flex;
+            justify-content: space-between;
+            box-sizing: border-box;
+            color: #555;
+        }
+        .sec1 div:nth-child(2){
+            width: 100px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            border-radius: 50px;
+            background: #f5f5f5;
+            margin-top: 7px;
+        }
+        .sec1 div:nth-child(2) a{
+            text-decoration: none;
+            color: #00b38a;
+        }
+        .sec2{
+            width: 100%;
+        }
+        .sec2 ul{
+            width: 100%;
+            height: 100%;
+            list-style: none;
+        }
+        .sec2 ul li{
+            padding: 14px;
+            border-top: 1px solid #e8e8e8;
+            position: relative;
+        }
+        .sec2 ul li img{
+            width: 60px;
+            height: 60px;
+            display: inline-block;
+        }
+        .sec2 ul li div{
+            display: inline-block;
+            width: 54%;
+        }
+        .sec2 ul li div h4{
+            font-size: 20px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .sec2 ul li div p{
+            margin-top: 3px;
+            font-size: 14px;
+            color: #555;
+        }
+        .sec2 ul li div time{
+            font-size: 12px;
+            color: #888;
+        }
+        .sec2 ul li span{
+            position: absolute;
+            top: 44%;
+            right: 14px;
+            color: #00b38a;
+        }
+        .sec3{
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            background: #fafafa;
+            border-top: 1px solid #e8e8e8;
+        }
+        .copyright{
+            margin: 30px 0 90px;
+            text-align: center;
+            font-size: 12px;
+            color: #333;
+        }
+        .copyright div{
+            line-height: 32px;
+        }
+        .copyright div span:nth-child(1){
+            color: #999;
+        }
+        footer{
+            width: 100%;
+            height: 45px;
+            line-height: 45px;
+            position: fixed;
+            bottom: 0;
+            background-color: #f6f6f6;
+            color: #c2cfcc;
+            border-top: 1px solid #e8e8e8;
+        }
+        footer div{
+            float: left;
+            width: 33.33%;
+            height: 100%;
+            text-align: center;
+        }
+        footer div .icon{
+            display: inline-block;
+            width: 18px;
+            height: 17px;
+            margin-bottom: -2px;
+        }
+        footer div:nth-child(1) .icon{
+            background: url("img/icon2.png") no-repeat -32px -20.5px;
+            background-size: 250px;
+        }
+        footer div:nth-child(2) .icon{
+            background: url("img/icon2.png") no-repeat -14px -2.5px;
+            background-size: 250px;
+        }
+        footer div:nth-child(3) .icon{
+            background: url("img/icon2.png") no-repeat -52.5px -2px;
+            background-size: 250px;
+        }
+    </style>
+</head>
+<body>
+<header>拉勾网</header>
+<section class="sec1">
+    <div>10秒定制职位</div>
+    <div>
+        <a href="javascript:;">去登陆</a>
+    </div>
+</section>
+<section class="sec2">
+    <ul>
+        <li>
+            <img src="img/CgqKkVg77B6ADQC4AAAOKPIDRPs475.jpg" alt="">
+            <div>
+                <h4>e橙优品</h4>
+                <p>技术支持[深圳]</p>
+                <time>今天 15:45</time>
+            </div>
+            <span>3k-5k</span>
+        </li>
+        <li>
+            <img src="img/CgqKkVg77B6ADQC4AAAOKPIDRPs475.jpg" alt="">
+            <div>
+                <h4>e橙优品</h4>
+                <p>外贸业务[深圳]</p>
+                <time>今天 15:45</time>
+            </div>
+            <span>6k-10k</span>
+        </li>
+        <li>
+            <img src="img/Cgp3O1Z7r8yAQdxBAAAjVwC-ubw375.jpg" alt="">
+            <div>
+                <h4>北京博特互动营销咨询有限公司</h4>
+                <p>客户经理AM[北京]</p>
+                <time>今天 15:45</time>
+            </div>
+            <span>8k-15k</span>
+        </li>
+        <li>
+            <img src="img/Cgp3O1Z7r8yAQdxBAAAjVwC-ubw375.jpg" alt="">
+            <div>
+                <h4>北京博特互动营销咨询有限公司</h4>
+                <p>电商运营[北京]</p>
+                <time>今天 15:45</time>
+            </div>
+            <span>5k-10k</span>
+        </li>
+        <li>
+            <img src="img/CgpEMlmBR9uAAZSNAAAKOmo2JHI524.jpg" alt="">
+            <div>
+                <h4>中园</h4>
+                <p>.net[北京]</p>
+                <time>今天 15:45</time>
+            </div>
+            <span>10k-20k</span>
+        </li>
+        <li>
+            <img src="img/CgYXBlTUXSyAGz5bAABerV812GM749.png" alt="">
+            <div>
+                <h4>粤辰星</h4>
+                <p>PHP工程师[广州]</p>
+                <time>今天 15:45</time>
+            </div>
+            <span>6k-10k</span>
+        </li>
+    </ul>
+</section>
+<section class="sec3">加载更多</section>
+<section class="copyright">
+    <p>©2015 lagou.com, all right reserved </p>
+    <div>
+        <span>移动版 · </span>
+        <span>电脑版 · </span>
+        <span>回顶部</span>
+    </div>
+</section>
+<footer>
+    <div style="color: #00b38a;background: #e7f3f0;">
+        <span class="icon"></span>
+        <span>职位</span>
+    </div>
+    <div>
+        <span class="icon"></span>
+        <span>搜索</span>
+    </div>
+    <div>
+        <span class="icon"></span>
+        <span>我的</span>
+    </div>
+</footer>
+</body>
+</html>
