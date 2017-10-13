@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script src="js/zepto.js"></script>
+    <script src="js/touch.js"></script>
+    <style>
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+        body{
+            margin: 0;
+            overflow: hidden;
+        }
+        .box{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+        }
+        .box li{
+            width: 100%;
+            flex-shrink: 0;
+            position: relative;
+        }
+        .box li p,.box li:last-child button{
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    </style>
+</head>
+<body>
+<ul class="box" id="box">
+    <li style="background: orange;">
+        <p>欢迎页</p>
+    </li>
+    <li style="background: yellow;">
+        <p>介绍页1</p>
+    </li>
+    <li  style="background: green;">
+        <p>介绍页2</p>
+    </li>
+    <li style="background: skyblue;">
+        <button>开始体验</button>
+    </li>
+</ul>
+</body>
+<script>
+    document.addEventListener('touchstart',function (ev) {
+        ev.preventDefault();
+    })
+    $(function () {
+        var n =0;
+        $('.box').on('swipeLeft',function () {
+            n++;
+            if (n>=$('li').length) n=$('li').length-1;
+            $(this).css('transform','translate3d(-'+n*100+'%,0,0)')
+        })
+        $('.box').on('swipeRight',function () {
+            n--;
+            if (n<0) n=0;
+            $(this).css('transform','translate3d(-'+n*100+'%,0,0)')
+        })
+        $('button').on('tap',function () {
+            location.href='http://m.taobao.com';
+        })
+    })
+</script>
+</html>
